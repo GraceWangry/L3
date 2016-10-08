@@ -9,7 +9,12 @@ import pokerEnums.eSuit;
 public class Deck {
 
 	private ArrayList<Card> deckCards = new ArrayList<Card>();
-
+	public int getCardsLeft(){
+		return deckCards.size();
+	}
+	public ArrayList<Card> getDeck(){
+		return deckCards;
+	}
 	public Deck() {
 		int iCardNbr = 1;
 		for (eSuit eSuit : eSuit.values()) {
@@ -28,7 +33,7 @@ public class Deck {
 		this();
 		int size = deckCards.size();
 		for (int i = 0; i < NbrOfJokers; i++){
-			Card joker = new Card(eSuit.JOKER, eRank.JOKER, size++);
+			Card  = new Card(eSuit.JOKER, eRank.JOKER, size++);
 			deckCards.add(joker);
 		}
 	}

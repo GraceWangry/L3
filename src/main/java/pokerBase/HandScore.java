@@ -53,6 +53,11 @@ public class HandScore {
 		Kickers = kickers;
 	}
 
+	public int compareTo(HandScore hs) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 
 	
 	
